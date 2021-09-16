@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam</title>
+    <link rel="stylesheet" href="Gamestyle.css">
+    <script src="https://kit.fontawesome.com/0244365092.js" crossorigin="anonymous"></script>
+
+</head>
+           <style>
+            *{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+
+    transition: 0.5s;
+    }
+        body{
+      background-color: rgb(43, 43, 43);
+     /*  background-color: rgb(255, 255, 255); */
+      overflow-x: hidden;
+    }
+    .main{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: relative;
+        padding: 20px 40px 50px 40px;
+       background-color: rgb(43, 43, 43);
+
+    
+    }
+   .banner-back{
+        width: 100%;
+        height: 60vh;
+        position: absolute;
+        z-index: 0;
+         background: url("https://s.isanook.com/ga/0/ui/194/974457/10_1466408699.jpg"); 
+        background-size: cover;
+    }
+    .banner-back2{
+        width: 100%;
+        height: 60vh;
+        position: absolute;
+        z-index: 0;
+        transform: translate(100%,0%);
+        background-size: cover;
+    }
+    
+    .goodofwar{
+        background: url("https://s.isanook.com/ga/0/ui/194/974457/10_1466408699.jpg");
+
+    }
+    .goose{
+           background: url("https://switchplayer.net/wp-content/uploads/2019/09/H2x1_NSwitchDS_UntitledGooseGame_image1600w.jpg");
+       
+
+    } 
+    .hedes{
+        background: url("https://images4.alphacoders.com/111/thumb-1920-1113632.png");
+    }
+
+    .banner-moveout-eff{
+        animation: bannerMoveOut 2s 0s forwards ;
+
+    }
+    .banner-movein-eff{
+        animation: bannerMovein .5s 0s forwards ;
+
+    }
+    
+    @keyframes bannerMoveOut {
+         0% {transform: translate(0%,0%);visibility: visible;}
+         25% {transform: translate(-100%,0%) ;visibility: visible;}
+         50% {transform: translate(-100%,-100%) ;visibility: visible;}
+         75% {transform: translate(100%,-100%) ;visibility: visible;}
+         100% {transform: translate(100%,0%); visibility: visible;} 
+    }
+    @keyframes bannerMovein {
+         from {transform: translate(100%,0%); visibility: visible;}
+         to {transform: translate(0%,0%); visibility: visible;}
+    }
+  
+   
+   
+    .banner{
+        width: 100%;
+        height: 55vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      overflow: hidden;  
+        z-index: 3;
+
+    }
+  
+    .banner-box-right{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+ /*        clip-path: polygon(35% 0%, 80% 0%, 70% 100%, 20% 100%); */
+
+        
+    }
+    .banner-box-left{
+        width: 65%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        font-size: 3.5vw;
+        padding-right: 150px;
+        padding-left: 50px;
+        z-index: 2;
+  
+    }
+    .banner-box-img{
+        width: 100%;
+        height: 100%;
+        background: url("https://gamingroom.co/wp-content/uploads/2018/04/496993-GW1.jpg");
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 0px;
+     
+
+        
+    }
+    .line-center{
+        width: 50%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.15);
+        position: absolute;
+        right: -70px;
+        top: 0;
+        transform: skewX(-20deg);
+    }
+
+    .line-right{
+        width: 1px;
+        height: 7vh;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: white;
+        font-size: 0.8rem;
+        letter-spacing: 5px;
+        z-index: 2;
+        
+    }
+    .banner-panel{
+        width: auto;
+        height: 5vh;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 3;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+    }
+    .banner-panel-item{
+        width: auto;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(136, 136, 136, 0.555);
+        margin: 5px;
+        font-size: 0.9rem;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+    }
+    .disable{
+        background-color: rgb(70, 70, 70);
+        clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+
+
+    }
+    .banner-panel-item:hover{
+        background-color: rgb(95, 95, 95);
+
+    }
+    .wordline{
+        width: 70%;
+    }
+    .banner-game{
+        width: auto;
+        height: auto;
+        font-size: 2vw;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 5px;
+        position: absolute;
+        top: 5vh;
+        left: 0vw;
+        background-color: rgba(85, 85, 85, 0.596);
+        padding: 5px 20px 5px 20px;
+        border-left: 1px solid white;
+        text-transform: uppercase;
+    }
+    .content{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 150px;
+    }
+   
+    .new{
+        width: 100%;
+        height: 50vh;
+        background: rgb(58, 58, 58);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url("https://images.unsplash.com/photo-1605478264999-8d1cd66e9c78?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"); 
+        
+        background-size: cover;
+        background-position: center;
+    
+     
+    }
+  
+    .new-item{
+        width: 25vw;
+        height: 30vh;
+        background: rgb(80, 80, 80);
+        margin: 10px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        
+
+    }
+    .new-item::after{
+        content: "";
+        width: 30%;
+        height: 30vh;
+        background-color: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        right: -9vw;
+        transform: skewX(-45deg);
+        backdrop-filter: blur(10px);
+
+    }
+    .new-item:hover img{
+        opacity: 100%;
+    }
+    .new-item:hover:after{
+        backdrop-filter: blur(0px);
+    }
+    .new-item-box{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0% 0% 5% 5%;
+        position: absolute;
+        font-size: 1.5rem;
+        color: white;
+
+    }
+   
+    .new-item-name{
+        width: auto;
+        height: 10vh;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+
+    }
+    .new-item-price{
+        width: 8vw;
+        height: 4.5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ff9c4bee;
+        letter-spacing: 2px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        
+
+        
+    }
+    .new-item-system{
+        width: 8vw;
+        height: 4vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 2px;
+        background-color: #ff7f3557;
+        margin-top: 10px;
+
+        
+    }
+    .new-item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 80%;
+
+        
+    }
+    .new-item-price i {
+        margin-left: 5px;
+        margin-top: 2px;
+        font-size: 1.2rem;
+    }
+    .new-item-system i {
+        margin-left: 10px;
+        margin-top: 2px;
+        font-size: .9rem;
+    }
+    .game{
+        width: 100%;
+        height: auto;
+        background: rgb(58, 58, 58);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-bottom: 60px;
+        background: url('https://static.vecteezy.com/system/resources/previews/000/693/323/non_2x/abstract-gradient-pink-purple-stripes-on-purple-background-vector.jpg');
+    
+    /*   background: linear-gradient(135deg,
+      rgb(146, 11, 146)20%,rgb(9, 52, 133) ); */
+        background-size: cover;
+  
+    }
+
+
+    .game-table{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        margin: 30px 30px 30px 30px;
+        flex-wrap: wrap;
+    }
+    
+    .game-item{
+        width: 15vw;
+        height: 40vh;
+        margin: 10px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        cursor: pointer;
+        overflow: visible;
+        margin-bottom: 70px;
+      
+            
+    }
+    .game-item img{
+        width: 100%;
+        height: 100%;
+        object-position:top left;
+      
+    }
+    .game-box{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: absolute;
+        bottom: -60px;
+        left: 0;
+        color: white;
+        background-color: rgba(48, 48, 48, 0.658);
+        padding-top: 10px;
+
+    }
+    .game-name{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-transform: capitalize;
+        font-size: 0.8rem;   
+
+    }
+    .game-price {
+        font-size: 0.7rem;   
+        padding: 5px;
+
+    }
+    .game-price i{
+        font-size: 0.6.5rem;   
+    }
+
+    .news{
+        width: 100%;
+        height: 60vh;
+        background-color: rgb(85, 85, 85);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        margin-top: 20px;
+        
+    }
+    .news-left{
+        width: 70%;
+        height: 100%;
+        background-color: rgb(29, 29, 29);
+        position: relative;
+    }
+    .news-left-box{
+        width: 100%;
+        height: 10vh;
+        max-height: 10vh;
+        background-color: rgba(29, 29, 29, 0.37);
+        position: absolute;
+        bottom: 0;
+        backdrop-filter: blur(10px);
+        color: white;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 10px;
+        overflow: hidden;
+
+    }
+    .news-box-header{
+        width: auto;
+        height: 70%;
+        display: flex;
+        align-items:center;
+        justify-content: flex-start;
+        padding-left: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1.2rem;
+        border-left: 1px solid white;
+
+    }
+    .news-box-detail{
+        width :100%;
+        height: auto;
+        color: white;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 20px;
+        font-size: 0.8rem;
+        padding-bottom: 20px;
+    }
+    .news-right{
+        width: 40%;
+        height: 100%;
+        background-color: rgb(46, 46, 46);
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding:  0px 5px 0px 5px;
+    }
+    .news-right-item{
+        width: 100%;
+        height: 48%;
+        background-color: rgb(46, 46, 46);
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    footer{
+        width: 100%;
+        height: 20vh;
+        background: rgba(109, 109, 109, 0);
+        bottom: 0;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        background: rgba(44, 44, 44, 0.8);
+
+
+    }
+    
+.footer-social{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 1.3rem;
+  border-right: 1px solid white;
+
+
+}
+.footer-social-icon{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  font-size: 1.2rem;
+
+}
+.footer-about{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 1.2rem;
+
+
+
+}
+.footer-about-detail{
+  width: 100%;
+  height:100%;
+  font-size: 0.8rem;
+
+}
+   
+   
+    
+    
+
+   
+    </style>
+<body>
+    <header class="header">
+        <div class="loader"></div>
+        <div class="header-logo"><span class="head-name-float">Stream <i class="fas fa-gamepad"></i></span></div>
+        <a href="GameIndex.html" class="header-item">
+            <i class="fas fa-home"></i> Home
+            <div class="detail">Home</div>
+        </a>
+        <a href="GameLibrary.html" class="header-item profile-btn">
+            <i class="fas fa-th-large"></i> Library
+            <div class="detail">Library</div>
+        </a>
+        <a href="GameShop.html" class="header-item">
+            <i class="fas fa-tag"></i> Shop
+            <div class="detail">Shop</div>
+        </a>
+        <a href="GameNews.html" class="header-item">
+            <i class="far fa-newspaper"></i> News
+            <div class="detail">News</div>
+        </a>
+
+        <a href="Login.html" class="login-item"> Login <i class="fas fa-sign-in-alt"></i></a>
+        <div style="right: 100px;" class="login-item cart"> <i  class="fas fa-shopping-cart"></i></div>
+        
+
+
+      </header>
+      <div class="main">
+        <div class="banner">
+            <div class="banner-back banner-movein-eff">
+            </div>
+            <div class="banner-back2"></div>
+            <div class="banner-box-left"> 
+           <div class="wordline">" Boy "</div>
+           <div class="author" style="font-size: 1.2vw; letter-spacing: 5px; margin-top: 5px;">- Kratos -</div>
+           
+         </div>
+         
+         <div class="banner-box-right">
+            
+         <div class="banner-panel" >
+            <div class="banner-panel-item disable"> 1 </div>
+            <div class="banner-panel-item"> 2 </div>
+            <div class="banner-panel-item"> 3 </div>
+        </div>
+
+         </div>
+         <div class="line-center">
+
+         </div>
+         
+         <div class="line-right yearTxt" style="width: auto; background: none; padding-left: 10px; padding-top: 10px;">GAME OF THE YEAR 2018</div>
+         <div class="banner-game">
+            God of War
+         </div>
+         <div class="line-right"></div>
+
+     </div>
+     <div class="content">
+        <div class="new">
+            <div class="new-pic"></div>
+              <div class="line-right"></div>
+              <div class="line-right" style="width: auto; background: none; padding-left: 10px; padding-top: 10px; font-size: 1.2rem;">New Game </div>
+
+              <div class="new-item">
+                <img style="transform: rotateY(180deg);" src="https://www.destructoid.com/wp-content/uploads/2020/12/608338-Far-Cry-6-delay.jpg" alt="">
+                  <div class="new-item-box">
+                     <div class="new-item-name">Far cry 6</div>
+                      <div class="new-item-price">100 <i class="fas fa-dollar-sign"></i></div>
+                      <div class="new-item-system"> <i class="fab fa-windows"></i> <i class="fab fa-playstation"></i></div>
+                  </div>
+              </div>
+
+              <div class="new-item">
+                <img style="transform: rotateY(0deg);" src="https://cdn.mos.cms.futurecdn.net/gNY3U5U2rmRgFcefSayuH3.jpg" alt="">
+                  <div class="new-item-box">
+                     <div class="new-item-name">Resident Evil Village</div>
+                      <div class="new-item-price">100 <i class="fas fa-dollar-sign"></i></div>
+                      <div class="new-item-system"> <i class="fab fa-windows"></i> <i class="fab fa-playstation"></i></div>
+                  </div>
+              </div>
+
+              <div class="new-item">
+                <img style="transform: rotateY(180deg);" src="https://news.in-24.com/content/uploads/2021/06/14/c921d6cc12.jpg" alt="">
+                  <div class="new-item-box">
+                     <div class="new-item-name">battlefield 2042 </div>
+                      <div class="new-item-price">100 <i class="fas fa-dollar-sign"></i></div>
+                      <div class="new-item-system"> <i class="fab fa-windows"></i> <i class="fab fa-playstation"></i></div>
+                  </div>
+              </div>
+         </div>
+        <div class="news">
+            <div class="line-right"></div>
+            <div class="line-right" style="width: auto; background: none; padding-left: 10px; padding-top: 10px; font-size: 1.2rem;">News </div>
+
+         <div class="news-left">
+                <img src="https://img.4gamers.com.tw/ckfinder-th/image2/auto/2020-11/Valorant-ss-scaled-1-201112-133516.jpg?versionId=2cIFFTacX4s6JI6ouWYwLYyOJpYIEU5K" alt="">
+                <div class="news-left-box">
+                    <div class="news-box-header"> Valorant  </div>
+               
+                   <div class="news-box-detail">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum itaque suscipit hic beatae illo cupiditate atque odio iure harum impedit exercitationem repellendus, neque doloribus maxime molestias dolores eum cumque!
+                   </div>
+                </div>
+             </div>
+             <div class="news-right">
+             <div class="news-right-item">
+                <img src="https://pbs.twimg.com/media/E5yMmQRWEAYNvCY.jpg" alt="">
+             </div>
+             <div class="news-right-item">
+                <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt57314d2d9e8e9dce/60b6c918cf9889265dab764e/VALORANT_YR1_Voting_16_9_opt.jpg?auto=webp&disable=upscale&height=504" alt="">
+             </div> 
+
+            </div>
+
+
+
+         </div>
+         
+         <div class="game">
+            <div class="line-right"></div>
+            <div class="line-right" style="width: auto; background: none; padding-left: 10px; padding-top: 10px; font-size: 1.2rem;">Recommend Games </div>
+                    <div class="game-table">
+                        <div class="game-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Ori_and_the_Blind_Forest_Logo.jpg/220px-Ori_and_the_Blind_Forest_Logo.jpg" alt="">
+                            <div class="game-box">
+                                <div class="game-name"> Ori and the blind Forrest  </div>
+                                <div class="game-price">200 <i class="fas fa-dollar-sign"></i> </div>
+                            </div>
+                        </div>
+                        <div class="game-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/th/thumb/d/d0/SIMS4.jpg/250px-SIMS4.jpg" alt="">
+                            <div class="game-box">
+                                <div class="game-name"> The sims 4</div>
+                                <div class="game-price">200 <i class="fas fa-dollar-sign"></i> </div>
+                            </div>
+                        </div>
+                        <div class="game-item">
+                            <img src="https://th-test-11.slatic.net/p/fa1453710d2245e0fa1f1743c4bf0097.jpg_720x720q80.jpg_.webp" alt="">
+                                <div class="game-box">
+                                    <div class="game-name"> Stardew Valley </div>
+                                <div class="game-price">200 <i class="fas fa-dollar-sign"></i> </div>
+
+                                </div>
+                        </div>
+                        <div class="game-item">
+                            <img src="https://image.api.playstation.com/vulcan/img/cfn/11307x4B5WLoVoIUtdewG4uJ_YuDRTwBxQy0qP8ylgazLLc01PBxbsFG1pGOWmqhZsxnNkrU3GXbdXIowBAstzlrhtQ4LCI4.png" alt="">
+                            <div class="game-box">
+                                <div class="game-name"> minecraft </div>
+                                <div class="game-price">200 <i class="fas fa-dollar-sign"></i> </div>
+                            </div>
+                        </div>
+                        <div class="game-item">
+                            <img src="https://s3.gaming-cdn.com/images/products/932/orig/terraria-cover.jpg" alt="">
+                            <div class="game-box">
+                                <div class="game-name"> Terraria </div>
+                                <div class="game-price">200 <i class="fas fa-dollar-sign"></i> </div>
+                            </div>
+                        </div>
+                        <div class="game-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/th/c/cc/Grand_Theft_Auto_V_Cover.png" alt="">
+                            <div class="game-box">
+                                <div class="game-name"> The sims 4</div>
+                                <div class="game-price">200 <i class="fas fa-dollar-sign"></i> </div>
+                            </div>
+                        </div>
+                        <div class="game-item">
+                            <img src="https://store.ubi.com/dw/image/v2/ABBS_PRD/on/demandware.static/-/Sites-masterCatalog/default/dw7387f247/images/large/5ecd2c925cdf9a1528a8c1d1.jpg?sw=341&sh=450&sm=fit" alt="">
+                                <div class="game-box">
+                                    <div class="game-name"> Stardew Valley </div>
+                                    <div class="game-price">200 <i class="fas fa-dollar-sign"></i> </div>
+                                </div>
+                            
+                        </div>
+                        <div class="game-item">
+                            <img src="https://images.g2a.com/newlayout/323x433/1x1x0/e229a5565b45/5fd211ba46177c7d675c6372" alt="">
+                            <div class="game-box">
+                                <div class="game-name"> Ori and the blind Forrest  </div>
+                                <div class="game-price">200 <i class="fas fa-dollar-sign"></i> </div>
+                            </div>
+                        </div>
+                        <div class="game-item">
+                            <img src="https://www.satyrnet.it/wp-content/uploads/2021/03/Watch-Dogs-Legion-online.jpg" alt="">
+                            <div class="game-box">
+                                <div class="game-name"> Stardew Valley </div>
+                                <div class="game-price">200 <i class="fas fa-dollar-sign"></i> </div>
+                            </div>
+                        </div>
+                        <div class="game-item">
+                            <img src="https://www.digiseller.ru/preview/907830/p1_3090231_54be502c.jpg" alt="">
+                            <div class="game-box">
+                                <div class="game-name"> Stardew Valley </div>
+                                <div class="game-price">200 <i class="fas fa-dollar-sign"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+        </div>
+        <footer class="footer">
+            <div class = "footer-social">
+                Follow Me
+                <div class = "footer-social-icon">
+                     <i class="fab fa-facebook-square"></i>
+                     <i class="fab fa-instagram"></i>
+                     <i class="fab fa-twitter-square"></i>
+                 </div>
+            </div>
+            <div class = "footer-about">
+                About-Me
+            <div class = "footer-about-detail">
+                73 m.4 Nathawee Songkhla 90160
+                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                 Amet quibusdam doloribus animi ipsa eum exercitationem magni velit commodi nulla explicabo.
+                  Exercitationem tempora fugit non pariatur totam odio aliquid unde quas!
+    
+            </div>
+             
+            </div>
+            
+        </footer>
+    </div>
+
+ 
+         
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+
+
+    var s = jQuery.noConflict(); 
+    
+
+  
+     s('body').on('click',function(e){
+         console.log("dsadadsa")
+     })
+
+
+
+       function selectAll(el){
+            return document.querySelectorAll("."+el)
+        }
+        function select(el){
+            return document.querySelector("."+el)
+        }
+
+        let banner_back = select("banner-back")
+        let banner_back2 = select("banner-back2")
+        let banner_panel_item =  selectAll("banner-panel-item")
+
+        let img_url = [
+        "https://s.isanook.com/ga/0/ui/194/974457/10_1466408699.jpg",
+            "https://images.alphacoders.com/942/942234.jpg" ,
+        "https://images4.alphacoders.com/111/thumb-1920-1113632.png",
+
+// "https://www.theedgesusu.co.uk/wp-content/uploads/2020/03/HONK.jpg"
+
+    ]
+    let wordlineArr = [
+        ["Boy","Kratos","God of War"],["is it dead yet?","Sekero","Sekero shadow die twice"],["I'm here to kill you ma father","Hades","Hades"]
+    ]
+  
+
+
+    banner_panel_item.forEach(item =>{
+            item.addEventListener("click",function(e){
+               if(item.classList != "banner-panel-item disable"){
+                  let index = parseInt(e.target.innerText-1)
+                  BannderEff(index)
+               }
+               for(let i = 0 ; i <= banner_panel_item.length-1 ;i++){
+                 banner_panel_item[i].classList.remove("disable")
+               }
+               item.classList.add("disable")
+            })
+        })
+      
+        function BannderEff(index) {
+            if(banner_back.className == "banner-back banner-movein-eff"){
+                
+                        select("yearTxt").innerHTML = "GAME OF THE YEAR 20"+parseInt(18+index)
+                        select("banner-game").innerHTML = wordlineArr[index][2]
+ 
+                        select("wordline").innerHTML = '" ' + wordlineArr[index][0] +' "'
+                        select("author").innerHTML = "- "+wordlineArr[index][1]+" -"
+
+              
+                        banner_back2.style.background = "url("+img_url[index]+")"
+                        banner_back2.style.backgroundSize = "cover"
+
+                        setTimeout(()=>{
+                        banner_back.classList.remove("banner-movein-eff")
+                        banner_back.classList.add("banner-moveout-eff")
+                        banner_back2.classList.add("banner-movein-eff")
+                        },110)
+
+                        }else{
+                            select("yearTxt").innerHTML = "GAME OF THE YEAR 20"+parseInt(18+index)
+                        select("banner-game").innerHTML = wordlineArr[index][2]
+
+
+
+                        select("wordline").innerHTML = '"' + wordlineArr[index][0] +'"'
+                        select("author").innerHTML = "- "+wordlineArr[index][1]+" -"
+
+                        banner_back.style.background = "url("+img_url[index]+")"
+                        banner_back.style.backgroundSize = "cover"
+
+                          setTimeout(()=>{
+                            banner_back.classList.remove("banner-moveout-eff")
+                            banner_back.classList.add("banner-movein-eff")
+                            banner_back2.classList.remove("banner-movein-eff")
+                            banner_back2.classList.add("banner-moveout-eff")
+                          },110)
+
+                        }
+        }
+
+
+</script>
+</html>

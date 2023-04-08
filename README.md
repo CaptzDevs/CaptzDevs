@@ -2,8 +2,10 @@
 ### Calendar.js 📆
 Make you feel comfortable to selecting date From Calendar UI 💞
 
+<a href="https://github.com/CaptzDevs/c-calendar.js">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=CaptzDevs&repo=c-calendar.js" />
 
+</a>
 
 -------
 

@@ -4,8 +4,8 @@
 
 [![My Skills](https://skillicons.dev/icons?i=html,css,js,jquery,nodejs,react,nextjs,express,php,mysql,github,mongodb)](https://skillicons.dev)
 
-### TerminalATM 📆
-Text Base ATM With C 💞
+### TerminalATM 💻
+Text Base ATM With C 
 
 <a href="https://github.com/CaptzDevs/terminalATM">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=CaptzDevs&repo=terminalATM" />

@@ -32,10 +32,6 @@ The provision of healthcare remotely by telecommunications technology
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=CaptzDevs&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
-## Contact 💌
- [<img width='250' src="https://img.shields.io/badge/-Captun Siwakorn-1877F2?style=for-the-badge&logo=Facebook&logoColor=white"/>](https://www.facebook.com/CaptainSiwakorn1)
- 
- 
  
 <!---
 CaptzDevs/CaptzDevs is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

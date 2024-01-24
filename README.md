@@ -3,7 +3,7 @@
 
 Web  
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,jquery)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,jquery,bootstrap)](https://skillicons.dev)
 
 [![My Skills](https://skillicons.dev/icons?i=nodejs,react,tailwind,nextjs,express,vite,figma,php)](https://skillicons.dev)
 
@@ -15,6 +15,10 @@ Database
 Programming   
 
 [![My Skills](https://skillicons.dev/icons?i=c,cpp,cs,java)](https://skillicons.dev)
+
+Design
+
+[![My Skills](https://skillicons.dev/icons?i=ps,pr,xd)](https://skillicons.dev)
 
 Other  
 

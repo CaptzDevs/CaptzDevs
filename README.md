@@ -2,7 +2,7 @@
 
 
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,jquery,nodejs,react,nextjs,express,php,mysql,github,mongodb)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,jquery,nodejs,react,tailwind,nextjs,express,php,mysql,github,mongodb,docker,postgresql)](https://skillicons.dev)
 
 ### PedVaccine 💉
 A Pediatric Vaccine  

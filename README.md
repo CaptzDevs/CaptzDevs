@@ -25,8 +25,7 @@ The provision of healthcare remotely by telecommunications technology
 
 -------
 
-## About Me
-- 👋 Hi, I’m @CaptzDevs
+## About Me  
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=CaptzDevs&show_icons=true&theme=tokyonight)  
 

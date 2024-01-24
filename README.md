@@ -4,26 +4,29 @@
 
 [![My Skills](https://skillicons.dev/icons?i=html,css,js,jquery,nodejs,react,nextjs,express,php,mysql,github,mongodb)](https://skillicons.dev)
 
-### TerminalATM 💻
-Text Base ATM With C 
+### PedVaccine 💉
+A Pediatric Vaccine  
+<a href="https://github.com/CaptzDevs/pedVaccine">
+  PedVaccine
+</a>
 
+
+### TeleHealth 📱   
+The provision of healthcare remotely by telecommunications technology  
+<a href="https://github.com/CaptzDevs/teleHealth">
+  TeleHealth
+</a>
+
+---
 <a href="https://github.com/CaptzDevs/terminalATM">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=CaptzDevs&repo=terminalATM" /> 
 </a>
 
-### Calendar.js 📆
-Make you feel comfortable to selecting date From Calendar UI 💞
-
-<a href="https://github.com/CaptzDevs/c-calendar.js">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=CaptzDevs&repo=c-calendar.js" />
-</a>
 
 -------
 
 ## About Me
 - 👋 Hi, I’m @CaptzDevs
-
-
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=CaptzDevs&show_icons=true&theme=tokyonight)  
 

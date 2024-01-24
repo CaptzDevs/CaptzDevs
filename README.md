@@ -1,8 +1,27 @@
-## Current Project ✨  
+## Overview
 
 
+Web  
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,jquery,nodejs,react,tailwind,nextjs,express,php,mysql,github,mongodb,docker,postgresql)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,jquery)](https://skillicons.dev)
+
+[![My Skills](https://skillicons.dev/icons?i=nodejs,react,tailwind,nextjs,express,vite,figma,php)](https://skillicons.dev)
+
+
+Database  
+
+[![My Skills](https://skillicons.dev/icons?i=mysql,mongodb,postgresql)](https://skillicons.dev)
+
+Programming   
+
+[![My Skills](https://skillicons.dev/icons?i=c,cpp,cs,java)](https://skillicons.dev)
+
+Other  
+
+[![My Skills](https://skillicons.dev/icons?i=docker)](https://skillicons.dev)
+
+
+## Current Project ✨    
 
 ### PedVaccine 💉
 A Pediatric Vaccine  

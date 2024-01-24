@@ -16,9 +16,6 @@ Programming
 
 [![My Skills](https://skillicons.dev/icons?i=c,cpp,cs,java)](https://skillicons.dev)
 
-Design
-
-[![My Skills](https://skillicons.dev/icons?i=ps,pr,xd)](https://skillicons.dev)
 
 Other  
 

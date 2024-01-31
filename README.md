@@ -17,11 +17,6 @@ Programming
 [![My Skills](https://skillicons.dev/icons?i=c,cpp,cs,java)](https://skillicons.dev)
 
 
-Other  
-
-[![My Skills](https://skillicons.dev/icons?i=docker)](https://skillicons.dev)
-
-
 ## Current Project ✨    
 
 ### PedVaccine 💉
